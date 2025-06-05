@@ -31,4 +31,15 @@ Set up the C# Project in Visual Studio Create a New C# Windows Forms App (.NET F
 ![image](https://github.com/user-attachments/assets/2677ae83-84a4-465a-954c-225d75586f60)
 ![image](https://github.com/user-attachments/assets/0880adfe-6144-4862-9a86-a96c0604d31f)
 
+SQLEXPRESS
+
+PCName\SQLEXPRESS
+
+CREATE DATABASE CarDatabase; GO
+
+USE CarDatabase; GO
+
+CREATE TABLE Cars ( Id INT PRIMARY KEY IDENTITY(1,1), Model NVARCHAR(255) NOT NULL, Weight FLOAT NOT NULL, Speed INT NOT NULL ); GO
+
+To see the cars: USE CarDatabase; SELECT * FROM Cars;
 
